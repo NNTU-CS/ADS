@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Материалы к учебным курсам НГТУ</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="http://thomasf.github.io/solarized-css/solarized-light.min.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Материалы к учебным курсам НГТУ</h1>
+
+
+
+<div id="outline-container-org20161ba" class="outline-2">
+<h2 id="ads"><a id="org20161ba"></a>Алгоритмы и структуры данных (весна 2023)</h2>
+
+
+<div id="outline-container-orgfc80b7d" class="outline-3">
+<h3 id="orgfc80b7d">Лекции</h3>
+<div class="outline-text-3" id="text-orgfc80b7d">
+<ul class="org-ul">
+<li><a href="ads/lections/lec01/lec01.pdf">Лекция 1. Определение и свойства алгоритмов</a></li>
+<li><a href="ads/lections/lec02/lec02.pdf">Лекция 2. Сложность алгоритмов</a></li>
+<li><a href="ads/lections/lec03/lec03.pdf">Лекция 3. Методы разработки и анализа алгоритмов</a></li>
+<li><a href="ads/lections/lec04/lec04.pdf">Лекция 4. Структуры данных и их классификация</a></li>
+<li><a href="ads/lections/lec05/lec05.pdf">Лекция 5. Простые алгоритмы сортировки</a></li>
+<li><a href="ads/lections/lec06/lec06.pdf">Лекция 6. Продвинутые алгоритмы сортировки</a></li>
+<li><a href="ads/lections/lec07/lec07.pdf">Лекция 7. Стек и очередь на массиве</a></li>
+<li><a href="ads/lections/lec08/lec08.pdf">Лекция 8. Связанные списки (1)</a></li>
+<li><a href="ads/lections/lec09/lec09.pdf">Лекция 9. Стек и очередь на списках</a></li>
+<li><a href="ads/lections/lec10/lec10.pdf">Лекция 10. Связанные списки (2)</a></li>
+<li><a href="ads/lections/lec11/lec11.pdf">Лекция 11. Бинарные деревья поиска</a></li>
+<li><a href="ads/lections/lec12/lec12.pdf">Лекция 12. AVL-деревья </a></li>
+<li><a href="ads/lections/lec13/lec13.pdf">Лекция 13. RB-деревья </a></li>
+<li><a href="ads/lections/lec14/lec14.pdf">Лекция 14. Хеш-таблицы </a></li>
+<li><a href="ads/lections/lec15/lec15.pdf">Лекция 15. Алгоритмы на графах </a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org77c2a7c" class="outline-3">
+<h3 id="org77c2a7c">Конспекты практических занятий</h3>
+<div class="outline-text-3" id="text-org77c2a7c">
+<ul class="org-ul">
+<li><a href="https://github.com/NNTU-CS/ADS-class-01.git">Итерация и рекурсия</a></li>
+<li><a href="https://github.com/NNTU-CS/ADS-class-02.git">Алгоритмы на массивах</a></li>
+<li><a href="https://github.com/NNTU-CS/ADS-class-03.git">Стек на массиве. Вычисление арифметических выражений</a></li>
+<li><a href="https://github.com/NNTU-CS/ADS-class-04.git">Очередь на массиве. Кольцевой буфер. Очередь с приоритетом</a></li>
+<li><a href="https://github.com/NNTU-CS/ADS-class-05.git">Стек и очередь на списке</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6036a21" class="outline-3">
+<h3 id="org6036a21">Лабораторные задания</h3>
+<div class="outline-text-3" id="text-org6036a21">
+<p>
+Инструкции к выполнению заданий находятся <a href="https://github.com/NNTU-CS/ADS-Information.git">здесь</a>
+Список участников/веток находятся <a href="ads/lists/branches.pdf">здесь</a>
+</p>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Задание</th>
+<th scope="col" class="org-left">Репозиторий</th>
+<th scope="col" class="org-right">Срок</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Задание 0. Алгоритм Евклида</td>
+<td class="org-left"><a href="https://github.com/NNTU-CS/ads-0.git">ADS-0</a></td>
+<td class="org-right">31.05</td>
+</tr>
+
+<tr>
+<td class="org-left">Задание 1. Разработка библиотеки для работы с простыми (prime)  числами</td>
+<td class="org-left"><a href="https://github.com/NNTU-CS/ads-1.git">ADS-1</a></td>
+<td class="org-right">27.02</td>
+</tr>
+
+<tr>
+<td class="org-left">Задание 2. Численные методы для вычисления трансцедентных функций</td>
+<td class="org-left"><a href="https://github.com/NNTU-CS/ads-2.git">ADS-2</a></td>
+<td class="org-right">06.03</td>
+</tr>
+
+<tr>
+<td class="org-left">Задание 3. Разработка модифицированного алгоритма бинарного поиска</td>
+<td class="org-left"><a href="https://github.com/NNTU-CS/ads-3.git">ADS-3</a></td>
+<td class="org-right">13.03</td>
+</tr>
+
+<tr>
+<td class="org-left">Задание 4. Подсчет всех пар целых чисел в массиве</td>
+<td class="org-left"><a href="https://github.com/NNTU-CS/ads-4.git">ADS-4</a></td>
+<td class="org-right">27.03</td>
+</tr>
+
+<tr>
+<td class="org-left">Задание 5. Стек. Вычисление арифметических выражений</td>
+<td class="org-left"><a href="https://github.com/NNTU-CS/ads-5.git">ADS-5</a></td>
+<td class="org-right">03.04</td>
+</tr>
+
+<tr>
+<td class="org-left">Задание 6. Очередь. Реализация очереди с приоритетами на массиве</td>
+<td class="org-left"><a href="https://github.com/NNTU-CS/ads-6.git">ADS-6</a></td>
+<td class="org-right">17.04</td>
+</tr>
+
+<tr>
+<td class="org-left">Задание 7. Очередь. Реализация очереди с приоритетами на списке</td>
+<td class="org-left"><a href="https://github.com/NNTU-CS/ads-7.git">ADS-7</a></td>
+<td class="org-right">01.05</td>
+</tr>
+
+<tr>
+<td class="org-left">Задание 8. Задача про круговой поезд</td>
+<td class="org-left"><a href="https://github.com/NNTU-CS/ads-8.git">ADS-8</a></td>
+<td class="org-right">08.05</td>
+</tr>
+
+<tr>
+<td class="org-left">Задание 9. Частотный анализ слов на основе бинарного дерева</td>
+<td class="org-left"><a href="https://github.com/NNTU-CS/ads-9.git">ADS-9</a></td>
+<td class="org-right">29.05</td>
+</tr>
+
+<tr>
+<td class="org-left">Задание 10. Генерация перестановок с помощью дерева вариантов</td>
+<td class="org-left"><a href="https://github.com/NNTU-CS/ads-10.git">ADS-10</a></td>
+<td class="org-right">05.06</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="outline-3">
+<h3> Вопросы к экзамену</h3>
+<div class="outline-text-3">
+<p>
+<a href="ads/questions/questions.pdf">версия 1 от 28 мая</a>
+</p>
+
+
+<div id="outline-container-orgfde3b0f" class="outline-3">
+<h3 id="orgfde3b0f">Дополнительно</h3>
+<div class="outline-text-3" id="text-orgfde3b0f">
+<ul class="org-ul">
+<li><a href="https://google.github.io/styleguide/cppguide.html">Google C++ Style Guide</a></li>
+<li><a href="https://habr.com/ru/post/480422/">Руководство Google по стилю в C++</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org763c7c8" class="outline-3">
+<h3 id="org763c7c8">Список литературы и полезных интернет-источников</h3>
+<div class="outline-text-3" id="text-org763c7c8">
+<ul class="org-ul">
+<li><i>Кормен Т.,Лейзерсон Ч., Ривест Р.</i>, <b>Алгоритмы: построение и анализ</b>, 3-е издение. Вильямс, 2019.</li>
+<li><i>Хайнеман Джордж, Поллис Гари.</i> <b>Алгоритмы. Справочник с примерами на C, C++, Java и Python</b>. Вильямс, 2017.</li>
+<li><i>Скиена Стивен С.</i> <b>Алгоритмы. Руководство по разработке.</b> БХВ-Петербург, 2018.</li>
+<li><i>Кормен Томас Х.</i> <b>Алгоритмы. Вводный курс.</b> Диалектика-Вильямс, 2020.</li>
+
+<li><i>Рафгарден Тим.</i> <b>Совершенный алгоритм. Графовые алгоритмы и структуры данных.</b> Питер, 2022.</li>
+<li><i>Рафгарден Тим.</i> <b>Совершенный алгоритм. Алгоритмы для NP-трудных задач.</b> Прогресс книга, 2021.</li>
+<li><i>Рафгарден Тим.</i> <b>Совершенный алгоритм. Основы.</b> Питер, 2019.</li>
+
+<li><i>Берд Ричард.</i> <b>Жемчужины проектирования алгоритмов. Функциональный подход.</b> ДМК Пресс. 2015.</li>
+<li><i>Стюарт Том.</i> <b>Теория вычислений для программистов.</b> ДМК Пресс, 2016.</li>
+
+<li><i>Паронджанов Владимир.</i> <b>Учись писать, читать и понимать алгоритмы.</b> ДМК Пресс, 2016.</li>
+<li><i>Бхаргава Адитья.</i> <b>Грокаем алгоритмы. Иллюстрированное пособие для программистов и любопытствующих.</b> Питер, 2019.</li>
+<li><i>Дасгупта С., Пападимитриу Х., Вазирани У.</i> <b>Алгоритмы.</b> МЦНМО 2014</li>
+
+<li><i>Ахо А., Хопкрофт Д., Ульман Д.</i> <b>Структуры данных и алгоритмы.</b> Вильямс, 2016.</li>
+<li><i>Ахо, Ульман, Хопкрофт</i>: <b>Разработка и анализ компьютерных алгоритмов.</b> Вильямс, 2021.</li>
+<li><i>Круз Р.Л.</i> <b>Структуры данных и проектирование программ</b>. М.: Бином, 2017.</li>
+<li><i>Д. Кнут.</i> <b>Искусство программирования Т.1-3</b>,Вильямс,2019</li>
+<li><i>Седжвик Р.</i> <b>Алгоритмы на C++.</b> Вильямс, 2019.</li>
+<li><i>Топп У., Форд У.</i> <b>Структуры данных в С++.</b> М.: Бином, 1999.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Алгоритмы. Методы. Исходники <a href="http://algolist.manual.ru">http://algolist.manual.ru</a></li>
+<li>MAXimal <a href="http://e-maxx.ru/algo/">http://e-maxx.ru/algo/</a></li>
+<li>Визуализатор алгоритмов <a href="https://algorithm-visualizer.org">https://algorithm-visualizer.org</a></li>
+<li>Data Structure Visualizations <a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html">https://www.cs.usfca.edu/~galles/visualization/Algorithms.html</a></li>
+<li><a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/">https://www.geeksforgeeks.org/fundamentals-of-algorithms/</a></li>
+<li>Анимация алгоритмов сортировки <a href="https://www.toptal.com/developers/sorting-algorithms">https://www.toptal.com/developers/sorting-algorithms</a></li>
+<li>Visualising data structures and algorithms through animation <a href="https://visualgo.net/en">https://visualgo.net/en</a></li>
+<li><a href="https://codonaft.com/%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B-%D0%B8-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%8B%D0%BC%D0%B8-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D0%BC%D0%B8/?utm_source=youtube&amp;utm_medium=description&amp;utm_campaign=social">Алгоритмы и структуры данных простыми словами</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.1 (<a href="https://orgmode.org">Org</a> mode 9.1.9)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
